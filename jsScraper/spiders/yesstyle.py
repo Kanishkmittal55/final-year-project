@@ -1,10 +1,9 @@
-from playwright_stealth import stealth
 import scrapy
+from playwright_stealth import stealth_sync
 
 class YesStyleSpider(scrapy.Spider):
     name = "yesstyle"
 
-    # Start URLs for the category we want to scrape
     start_urls = [
         "https://www.yesstyle.com/en/beauty-cheeks/list.html/bcc.15500_bpt.46"
     ]
@@ -38,14 +37,50 @@ class YesStyleSpider(scrapy.Spider):
 
     async def parse(self, response):
         page = response.meta["playwright_page"]
+        stealth_sync(page)  # Apply stealth mode
 
-        # Apply stealth mode to Playwright to avoid bot detection
-        await stealth(page)
+        # Create the output file and start writing
+        file_path = "yesstyle_products.txt"
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write("YesStyle Products:\n\n")
 
-        # Wait for 5 seconds
-        await page.wait_for_timeout(10000)
+        current_page = 1
+        max_scrolls = 5  # Adjust if you want more or fewer pages
 
-        # Close the Playwright page
+        for _ in range(max_scrolls):
+            self.log(f"Scraping page {current_page}")
+            
+            # Scroll to the bottom to trigger loading more products
+            await page.evaluate("window.scrollBy(0, document.body.scrollHeight)")
+            await page.wait_for_timeout(5000)  # Adjust delay if needed
+
+            # Extract product information from the loaded page
+            self.parse_products(response, current_page, file_path)
+
+            # Check if we have reached the last page (optional, based on logic)
+            current_page += 1
+
         await page.close()
 
-        self.log("Playwright page has been closed after 5 seconds.")
+    def parse_products(self, response, current_page, file_path):
+        """Extracts product data and appends it to a file, keeping track of the page number"""
+        products = response.css('div.product')  # Adjust this selector to the actual product class
+
+        if not products:
+            self.log(f"No products found on page {current_page}")
+            return
+
+        with open(file_path, "a", encoding="utf-8") as f:
+            f.write(f"\n\nPAGE {current_page}\n\n")
+            for product in products:
+                name = product.css('a::attr(title)').get()
+                url = product.css('a::attr(href)').get()
+                price = product.css('span.price::text').get()
+
+                # Write to file
+                f.write(f"Product Name: {name}\n")
+                f.write(f"Product URL: {url}\n")
+                f.write(f"Product Price: {price}\n")
+                f.write("\n")
+
+        self.log(f"Page {current_page} products appended to {file_path}")
