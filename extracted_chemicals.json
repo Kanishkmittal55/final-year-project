@@ -1,47 +1,150 @@
 [
-    "Claimed Ingredient",
-    "Acetyl Trifluoromethylphenyl\nValyglycine",
-    "Hydroxypropyl Tetrahydropyrantriol",
-    "Vitamin C",
-    "HydroxypropylTetrahydropyrantriol",
-    "PEG/PPG/Polybutylne Glycol",
-    "PPG-6-decyltetradeceth-30",
-    "Perfume Or Tocopherol",
-    "Claimed Ingredient",
-    "Capryloyl Salicylic Acid",
-    "Rhamnose Or Mannose",
-    "Hydroxypropyl\nTetrahydropyrantriol +",
-    "Rhamnose Or Mannose",
-    "Adenosine",
-    "Rhamnose Or Mannose",
-    "Claimed Ingredient",
-    "Adenosine",
-    "Poly C10-30 Alkyl Acrylate",
-    "Retinol",
-    "Calcium Alginate",
-    "Sodium Cocoyl Glycinate Or\nSodium Lauroyl Glutamate Or\nDisodium Cocoyl Glutamate",
-    "Claimed Ingredient",
-    "Inulin Lauryl Carbamate",
-    "PEG 10 Dimethicone",
-    "Uv Filters",
-    "Phenylbenzimidazole Sulfonic\nAcid",
-    "Terephthalylidene Dicamphor\nSulfonic Acid",
-    "Carrageenan Or Chondrus\nCrispus Extra",
-    "Claimed Ingredient",
-    "Phenylbenzimidazole Sulfonic Acid",
-    "Terephthalylidene Dicamphor Sulfonic Acid",
-    "Xanthan Gum Or\nHydroxypropylcellulose",
-    "Caprylic/Capric Triglyceride",
-    "Acrylamide/Sodium Or Acryloyldimethyltaurate\nCopolymer",
-    "Phenylethyl Resorcinol",
-    "Claimed Ingredient",
-    "Polydatin",
-    "Niacinamide",
-    "Chlorogenic Acid",
-    "Plygonum Cuspidatum Root\nExtract",
-    "Glycerin",
-    "Propanediol",
-    "Methoxypropylamino\nCyclohexenylidene\nEthoxyethylcyanoacetate",
-    "2-Mercaptonicotinoyl Glycine",
-    "eae"
+    {
+        "Claimed Ingredient": "Ascorbic Acid",
+        "Synonyms": ["Vitamin C", "L-Ascorbic Acid"]
+    },
+    {
+        "Claimed Ingredient": "Acetyl Trifluoromethylphenyl Valyglycine",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Hydroxypropyl Tetrahydropyrantriol",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Vitamin C",
+        "Synonyms": ["Ascorbic Acid", "L-Ascorbic Acid"]
+    },
+    {
+        "Claimed Ingredient": "PEG/PPG/Polybutylne Glycol",
+        "Synonyms": ["Polyethylene Glycol", "Polypropylene Glycol"]
+    },
+    {
+        "Claimed Ingredient": "PPG-6-decyltetradeceth-30",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Perfume",
+        "Synonyms": ["Fragrance"]
+    },
+    {
+        "Claimed Ingredient": "Tocopherol",
+        "Synonyms": ["Vitamin E", "Alpha-Tocopherol"]
+    },
+    {
+        "Claimed Ingredient": "Capryloyl Salicylic Acid",
+        "Synonyms": ["LHA", "Lipohydroxy Acid"]
+    },
+    {
+        "Claimed Ingredient": "Rhamnose",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Mannose",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Adenosine",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Poly C10-30 Alkyl Acrylate",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Retinol",
+        "Synonyms": ["Vitamin A", "Retinoid", "Retinaldehyde"]
+    },
+    {
+        "Claimed Ingredient": "Calcium Alginate",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Sodium Cocoyl Glycinate",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Sodium Lauroyl Glutamate",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Disodium Cocoyl Glutamate",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Inulin Lauryl Carbamate",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "PEG 10 Dimethicone",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Uv Filters",
+        "Synonyms": ["Sunscreen", "Sun Protection"]
+    },
+    {
+        "Claimed Ingredient": "Phenylbenzimidazole Sulfonic Acid",
+        "Synonyms": ["Ensulizole"]
+    },
+    {
+        "Claimed Ingredient": "Terephthalylidene Dicamphor Sulfonic Acid",
+        "Synonyms": ["Mexoryl SX"]
+    },
+    {
+        "Claimed Ingredient": "Carrageenan",
+        "Synonyms": ["Chondrus Crispus"]
+    },
+    {
+        "Claimed Ingredient": "Xanthan Gum",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Hydroxypropylcellulose",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Caprylic/Capric Triglyceride",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Acrylamide/Sodium Acryloyldimethyltaurate Copolymer",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Phenylethyl Resorcinol",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Polydatin",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Niacinamide",
+        "Synonyms": ["Vitamin B3", "Nicotinamide"]
+    },
+    {
+        "Claimed Ingredient": "Chlorogenic Acid",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Polygonum Cuspidatum Root Extract",
+        "Synonyms": ["Japanese Knotweed Extract"]
+    },
+    {
+        "Claimed Ingredient": "Glycerin",
+        "Synonyms": ["Glycerol"]
+    },
+    {
+        "Claimed Ingredient": "Propanediol",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "Methoxypropylamino Cyclohexenylidene Ethoxyethylcyanoacetate",
+        "Synonyms": []
+    },
+    {
+        "Claimed Ingredient": "2-Mercaptonicotinoyl Glycine",
+        "Synonyms": []
+    }
 ]

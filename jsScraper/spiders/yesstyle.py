@@ -5,7 +5,7 @@ class YesStyleSpider(scrapy.Spider):
     name = "yesstyle"
 
     start_urls = [
-        "https://www.yesstyle.com/en/beauty-cheeks/list.html/bcc.15500_bpt.46"
+        "https://www.yesstyle.com/en/beauty-eyes/list.html/bcc.15488_bpt.46"
     ]
 
     custom_settings = {
@@ -45,7 +45,7 @@ class YesStyleSpider(scrapy.Spider):
             f.write("YesStyle Products:\n\n")
 
         current_page = 1
-        max_scrolls = 5  # Adjust if you want more or fewer pages
+        max_scrolls = 30  # Adjust if you want more or fewer pages
 
         for _ in range(max_scrolls):
             self.log(f"Scraping page {current_page}")
@@ -54,17 +54,21 @@ class YesStyleSpider(scrapy.Spider):
             await page.evaluate("window.scrollBy(0, document.body.scrollHeight)")
             await page.wait_for_timeout(5000)  # Adjust delay if needed
 
-            # Extract product information from the loaded page
-            self.parse_products(response, current_page, file_path)
+            # Capture any new API response triggered by the scroll
+            async with page.expect_response(lambda r: "rest/products/v1/department" in r.url) as resp_info:
+                response_api = await resp_info.value
+                response_json = await response_api.json()
 
-            # Check if we have reached the last page (optional, based on logic)
+                # Write the extracted data from JSON to the file
+                self.parse_products(response_json, current_page, file_path)
+
             current_page += 1
 
         await page.close()
 
-    def parse_products(self, response, current_page, file_path):
-        """Extracts product data and appends it to a file, keeping track of the page number"""
-        products = response.css('div.product')  # Adjust this selector to the actual product class
+    def parse_products(self, response_json, current_page, file_path):
+        """Extracts product data from the JSON API response and appends it to a file"""
+        products = response_json.get("products", [])
 
         if not products:
             self.log(f"No products found on page {current_page}")
@@ -73,14 +77,9 @@ class YesStyleSpider(scrapy.Spider):
         with open(file_path, "a", encoding="utf-8") as f:
             f.write(f"\n\nPAGE {current_page}\n\n")
             for product in products:
-                name = product.css('a::attr(title)').get()
-                url = product.css('a::attr(href)').get()
-                price = product.css('span.price::text').get()
-
-                # Write to file
-                f.write(f"Product Name: {name}\n")
-                f.write(f"Product URL: {url}\n")
-                f.write(f"Product Price: {price}\n")
-                f.write("\n")
+                # Write all key-value pairs for each product
+                for key, value in product.items():
+                    f.write(f"{key}: {value}\n")
+                f.write("\n")  # Separate each product with a newline
 
         self.log(f"Page {current_page} products appended to {file_path}")
