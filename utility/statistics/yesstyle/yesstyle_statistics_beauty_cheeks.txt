@@ -1,0 +1,147 @@
+Total number of products: 360
+Total unique brands: 143
+
+Number of products per brand:
+JOOCYEE: 7
+GOGO TALES: 16
+The Saem: 2
+INTO YOU: 3
+Flower Knows: 9
+CLIO: 4
+Gege Bear: 8
+Laka: 1
+biya: 4
+hince: 2
+romand: 1
+dasique: 5
+COLORROSE: 2
+lilybyred: 3
+BEAUTY GLAZED: 4
+Judydoll: 12
+Kaleidos: 6
+colorgram: 1
+Canmake: 2
+Cappuvini: 3
+FLORTTE: 5
+Creer Beaute: 1
+peripera: 4
+too cool for school: 1
+Art Value: 1
+FOCALLURE: 7
+HOLIKA HOLIKA: 3
+GIRLCULT: 3
+2aN: 1
+RiRe: 1
+ETUDE: 3
+A'PIEU: 1
+TONYMOLY: 2
+ZEESEA: 3
+OUT-OF-OFFICE: 1
+ARTMISS: 2
+ROMANTIC BEAUTY: 1
+YIGU DIGU: 2
+AMUSE: 2
+Peach C: 1
+espoir: 1
+FOREVER KEY: 2
+CHEERFLOR: 1
+CEZANNE: 2
+ABOUT_TONE: 1
+RoyueS: 1
+GELLA'S: 9
+CHIOTURE: 1
+NOVO: 4
+JILL LEEN: 10
+Meilinda: 2
+THE FACE SHOP: 1
+NATURE REPUBLIC: 2
+Kose: 8
+ROZO: 1
+HYNTOOR: 2
+TPSY: 1
+xixi: 6
+WODWOD: 1
+Heng Fang: 2
+MYY: 1
+Kaja: 2
+PUCO: 2
+MISSHA: 1
+SPENNY: 4
+MilleFee: 1
+Girls Crush: 1
+Sofea: 1
+CATKIN: 2
+RUORI LIANA: 2
+Jelly Bubble: 5
+Bbi@: 1
+&be: 2
+O.TWO.O: 2
+HOLD LIVE: 7
+LEEMEMBER: 1
+FreshO2: 2
+HERORANGE: 4
+Kanebo: 6
+Shiseido: 8
+UNMIX: 1
+COLOR SCHOOL: 1
+Revlon: 2
+MARIE DALGAR: 3
+SHEDELLA: 3
+Snidel Beauty: 1
+heme: 3
+MEKO: 6
+Berrisom: 1
+Milk Touch: 1
+EXCEL: 1
+Christian Dior: 2
+NARS: 2
+DANCING UP: 1
+INTO U: 1
+HERA: 1
+UODO: 1
+PINKPUNK: 1
+Gracebabi: 1
+CHIOTURE JAPAN: 1
+Celvoke: 1
+IMAGIC: 2
+WHOMEE: 2
+E.L.G: 4
+RMK: 1
+4U2: 2
+N.A.F: 1
+FORENCOS: 1
+CHIFURE: 7
+ettusais: 1
+Shu Uemura: 1
+VDIVOV: 1
+I'M MEME: 1
+ETVOS: 1
+ONLY MINERALS: 1
+BISOUS BISOUS: 1
+naturaglace: 1
+IPSA: 1
+ISEHAN: 1
+LB: 1
+Cle de Peau Beaute: 1
+ADDICTION: 1
+VEECCI: 1
+club cosmetics: 1
+Kirei&co.: 3
+BareMinerals: 7
+SUQQU: 1
+COLOUR ZONE: 1
+cheeryep: 1
+luamo: 1
+K-Palette: 1
+Sofina: 2
+POPJUICE: 1
+MISSGUIDED: 3
+RED EARTH: 1
+BOBBI BROWN: 1
+TANGO: 4
+Laura Mercier: 1
+crea modo: 2
+RIMMEL LONDON: 1
+dodo: 4
+Paul & Joe: 1
+Anna Sui: 1

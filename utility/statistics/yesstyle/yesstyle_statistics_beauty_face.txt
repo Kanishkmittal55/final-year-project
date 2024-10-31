@@ -1,0 +1,301 @@
+Total number of products: 1033
+Total unique brands: 297
+
+Number of products per brand:
+ETUDE: 5
+dasique: 3
+MIZON: 4
+MISSHA: 14
+Judydoll: 13
+TIRTIR: 3
+espoir: 12
+peripera: 4
+glow: 1
+romand: 4
+SKINFOOD: 1
+CLIO: 9
+VDL: 8
+VT: 4
+PINKFLASH: 3
+HANDAIYAN: 2
+innisfree: 7
+nuse: 1
+Parnell: 2
+The Saem: 17
+RoyueS: 4
+GOGO TALES: 6
+too cool for school: 10
+FOCALLURE: 13
+JAVIN DE SEOUL: 3
+MACQUEEN: 2
+lilybyred: 3
+JUNG SAEM MOOL: 3
+NOVO: 8
+JULIA POP: 2
+NEOGEN: 1
+numbuzin: 1
+KLAVUU: 6
+WAKEMAKE: 4
+BEAUTY GLAZED: 3
+UNLEASHIA: 1
+Flower Knows: 4
+Mooekiss: 1
+THE FACE SHOP: 19
+Milk Touch: 1
+APRILSKIN: 1
+VEECCI: 6
+O HUI: 13
+THE WHOO: 18
+HERA: 2
+PONY EFFECT: 2
+HOLIKA HOLIKA: 10
+Kokuryudo: 1
+LANEIGE: 2
+IMAGIC: 5
+Elizavecca: 2
+hince: 2
+Purito SEOUL: 1
+Shiseido: 30
+Kose: 40
+CATKIN: 5
+JOOCYEE: 2
+touch in SOL: 1
+Givenchy: 1
+biya: 2
+xixi: 4
+freshian: 5
+&be: 9
+BANILA CO: 4
+Gege Bear: 2
+Koh Gen Do: 3
+Art Value: 2
+GIRLCULT: 1
+moonshot: 1
+Canmake: 2
+eyeNlip: 3
+PRAMY: 4
+CHASIN' RABBITS: 1
+IOPE: 4
+Bbi@: 2
+ongredients: 1
+TROIAREUKE: 1
+d'Alba: 1
+FOREVER KEY: 3
+RED EARTH: 4
+EXCEL: 4
+INTO YOU: 1
+fwee: 1
+NATURE REPUBLIC: 4
+3CE: 8
+club cosmetics: 9
+su:m37: 5
+Shu Uemura: 5
+Fidoo: 2
+AMUSE: 1
+Maybelline: 14
+2aN: 1
+CEZANNE: 16
+AKF: 1
+Nella: 1
+Funny Elves: 5
+It'S SKIN: 1
+ZEESEA: 11
+O.TWO.O: 3
+THE LAB by blanc doux: 2
+Ishizawa-Lab: 2
+DIJIA: 1
+PASSIONAL LOVER: 11
+Sofina: 8
+CODE GLOKOLOR: 3
+Dr. Althea: 2
+A'PIEU: 2
+ISEHAN: 9
+Albion: 3
+UCANBE: 1
+Fraijour: 1
+Solone: 2
+MENOW: 7
+FRUDIA: 3
+WODWOD: 1
+CHEERFLOR: 1
+MEIFUBAO: 3
+MUZIGAE MANSION: 1
+Pudaier: 1
+COGIT: 1
+SUQQU: 4
+Sigma Beauty: 1
+CandyDoll: 2
+Kanebo: 28
+Sulwhasoo: 1
+jenny house: 1
+MISSGUIDED: 1
+CRUX: 1
+ma:nyo: 1
+Sooryehan: 2
+ADDICTION: 8
+TONYMOLY: 7
+Beauty World: 1
+RUORI LIANA: 2
+THYRA: 1
+Charlotte Tilbury: 1
+I'M MEME: 1
+SANA: 7
+Kao: 2
+OUT-OF-OFFICE: 1
+Biodance: 1
+ASTALIFT: 2
+Cle de Peau Beaute: 5
+CNP Laboratory: 3
+SK-II: 1
+CHIOTURE: 1
+IPSA: 4
+MUJI: 7
+ACRO: 3
+Farm Stay: 2
+LUCKY TRENDY: 2
+DEZONE: 1
+HYNTOOR: 1
+MEIKING: 3
+ettusais: 2
+Chantilly: 1
+MAKEheal: 2
+SPENNY: 3
+CHANDO: 2
+CHARIS & Co.: 1
+OPERA: 1
+BCL: 2
+WHOMEE: 12
+DHC: 7
+FORENCOS: 1
+CHIFURE: 6
+RMK: 6
+NARS: 24
+BLACK ROUGE: 2
+JAPANORGANIC: 4
+Paul & Joe: 5
+Orbis: 6
+uka: 5
+Fujiko: 1
+Marna: 1
+Kryolan: 5
+ETVOS: 9
+Pretty skin: 2
+Naris Up: 2
+Dr. Ceuracle: 1
+Jigott: 1
+Lancome: 1
+DermaElements: 1
+Chacott: 6
+naturaglace: 7
+House of Rose: 3
+Dear.A: 1
+heme: 2
+COLORKEY: 2
+BLANC DIVA: 3
+MEILIN: 2
+Mary&May: 1
+TRANSINO: 1
+MiMC: 4
+AQUA LALA: 1
+Today's Cosme: 2
+Borica: 2
+Rohto Mentholatum: 2
+Kirei&co.: 2
+Yunth: 1
+MSH: 4
+Make Up For Ever: 9
+Kaleidos: 2
+ARTMISS: 2
+Laura Mercier: 6
+Christian Dior: 2
+Meilinda: 2
+MEKO: 5
+Meishoku Brilliant Colors: 3
+9wishes: 1
+Aqua Aqua: 4
+Cosmetex Roland: 1
+Uhue: 2
+OSITREE: 3
+Cathy Doll: 1
+KATO-KATO: 1
+EILEEN GRACE: 1
+Amore Pacific: 1
+Qtis: 1
+Anna Sui: 2
+N.A.F: 2
+Embryolisse: 1
+RICE FORCE: 2
+Ottie: 2
+ONLY MINERALS: 2
+siero: 2
+Co-medical: 1
+AERY JO: 1
+LB: 1
+TRINITYLINE: 2
+FENTY BEAUTY: 1
+JFORYOU: 3
+OSAJI: 1
+REC: 3
+DEROL: 2
+MYY: 1
+REIKO KAZKI: 1
+PUCO: 1
+Sofea: 3
+ROMANTIC BEAUTY: 2
+TOCU: 2
+to/one: 1
+Hatsuyuki no Shizuku: 1
+JILL LEEN: 2
+Koji: 2
+BareMinerals: 10
+everbab: 1
+L'OREAL PARIS: 1
+JEJO: 1
+TANGO: 2
+SANSEN: 1
+Quince: 1
+CARY: 1
+lishu: 1
+24h cosme: 1
+UODO: 1
+MEETFUNS: 1
+nahls: 1
+SHEDELLA: 1
+AMORTALS: 1
+CARTER BEAUTY: 2
+Revlon: 2
+CZEL: 1
+Poppy21: 2
+MIGUHARA: 4
+so natural: 1
+febble: 1
+BOBBI BROWN: 1
+ABOUT_TONE: 1
+Dr.want: 1
+FreshO2: 2
+Ciracle: 1
+BRILLIAGE: 8
+DAISO: 3
+ORORA: 10
+Nippon Olive: 1
+ReZARD beauty: 2
+RIMMEL LONDON: 5
+URIID: 1
+MONSTER FACTORY: 2
+HACCI: 1
+MANAVIS: 2
+ISOI: 1
+SMASLIFT: 2
+NITTO SEIKI: 1
+THE WHITE GHOST: 2
+MAMA BUTTER: 1
+Elizabeth: 1
+E.L.G: 1
+Miss 9': 1
+UNICAT: 1
+BeautyMaker: 2
+Dr.Select: 2
+WATOSA: 1
+Minon: 1
+Secret Nature: 1
+Heynature: 1

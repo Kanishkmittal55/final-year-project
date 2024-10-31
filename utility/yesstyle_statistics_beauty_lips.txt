@@ -1,0 +1,275 @@
+Total number of products: 1008
+Total unique brands: 271
+
+Number of products per brand:
+BEAUTY GLAZED: 3
+NOVO: 9
+MISTINE: 1
+FLORTTE: 19
+nuse: 4
+ETUDE: 6
+peripera: 8
+lilybyred: 7
+fwee: 2
+3CE: 12
+romand: 8
+MACQUEEN: 4
+AMUSE: 2
+GOGO TALES: 15
+Rohto Mentholatum: 9
+PINKFLASH: 4
+YIGU DIGU: 4
+HANDAIYAN: 10
+COLORROSE: 4
+Gege Bear: 39
+colorgram: 3
+The Saem: 6
+IRENEDA: 2
+Nivea Japan: 5
+TIRTIR: 1
+Judydoll: 11
+innisfree: 3
+Uhue: 6
+CORINGCO: 2
+Cappuvini: 10
+FOCALLURE: 21
+GIRLCULT: 5
+Laka: 2
+THE FACE SHOP: 6
+CODE GLOKOLOR: 2
+UNLEASHIA: 2
+dasique: 8
+Dr. Althea: 1
+CLIO: 4
+Flower Knows: 9
+House of Hur: 1
+MUZIGAE MANSION: 3
+VEECCI: 11
+INTO YOU: 25
+WAKEMAKE: 5
+HERA: 6
+Kaleidos: 6
+Bbi@: 8
+espoir: 5
+moonshot: 1
+Pieras: 2
+Benton: 1
+mude: 3
+BLACK ROUGE: 9
+Art Value: 5
+Kailijumei: 1
+Creer Beaute: 1
+hince: 3
+Fujiko: 1
+OMI: 2
+DHC: 3
+TOCOBO: 2
+Kaja: 3
+primera: 2
+BANILA CO: 7
+ASUNAROSYA: 1
+HYNTOOR: 6
+SIORIS: 1
+Shiseido: 10
+CATKIN: 6
+NEIYOU: 1
+biya: 2
+Heng Fang: 5
+I'M MEME: 3
+COSNORI: 1
+INSITI: 1
+JOOCYEE: 13
+THE WHOO: 7
+Country & Stream: 3
+Keep in Touch: 4
+haggard: 1
+Belif: 2
+MANSLY: 8
+Mooekiss: 1
+TONYMOLY: 3
+CUTE RUMOR: 6
+HOLD LIVE: 3
+PASSIONAL LOVER: 1
+NATURE REPUBLIC: 2
+beplain: 1
+O HUI: 6
+Pudaier: 7
+Vaseline Japan: 2
+FORENCOS: 4
+MERZY: 3
+Haa: 1
+Skater: 1
+too cool for school: 1
+IMAGIC: 2
+FRUDIA: 1
+SKINFOOD: 1
+su:m37: 2
+COLORKEY: 21
+La Mer: 1
+A'PIEU: 1
+O.TWO.O: 5
+RNW: 1
+URBANAND: 1
+HOLIKA HOLIKA: 2
+VDIVOV: 4
+CHEERFLOR: 2
+Dr. Ceuracle: 1
+Sigma Beauty: 1
+Sofea: 3
+Sanrio: 3
+COOL BETTY: 2
+MISSHA: 4
+ENTROPY: 1
+xixi: 12
+Fraijour: 1
+TPSY: 2
+shaishaishai: 1
+mixsoon: 1
+Estee Lauder: 1
+LABIOTTE: 2
+Ririmew: 2
+HERORANGE: 14
+siero: 5
+Merry monde: 1
+NAMING: 1
+Canmake: 3
+RACE: 1
+Glint: 1
+Kose: 16
+SANA: 2
+ISEHAN: 5
+Cle de Peau Beaute: 7
+ukiss: 4
+JULIA POP: 1
+Elizabeth: 1
+Sunnicorn: 1
+THYRA: 2
+YNM: 1
+MilleFee: 3
+OUT-OF-OFFICE: 1
+GELLA'S: 5
+CHIOTURE: 7
+TOORUNE: 3
+2aN: 1
+Revlon: 2
+Fidoo: 1
+PUCO: 14
+freshian: 1
+MAKEheal: 1
+Lovisia: 1
+Christian Dior: 3
+lishu: 1
+so natural: 1
+EXCEL: 5
+MYY: 9
+CATISS: 2
+Kao: 1
+MiMC: 1
+Paul & Joe: 3
+ADDICTION: 4
+CHIFURE: 5
+kobeleen: 11
+AZTK: 2
+WODWOD: 3
+AVANCE: 1
+Pretty skin: 1
+Fueki: 1
+DEZONE: 1
+Kanebo: 9
+MEIKING: 3
+NARS: 5
+Mandom: 1
+skybottle: 2
+ROMANTIC BEAUTY: 13
+JILL LEEN: 4
+Gracebabi: 1
+SHOBIDO: 3
+cheeryep: 1
+MARIE DALGAR: 6
+Charlotte Tilbury: 1
+LEEMEMBER: 1
+OPERA: 1
+My Pretty Cosme: 1
+DANCING UP: 2
+Guerlain: 1
+MOMUS: 1
+Dr. Bio: 1
+YSL: 3
+Jelly Bubble: 2
+FreshO2: 6
+club cosmetics: 1
+SPENNY: 2
+TOM MARK: 1
+POPJUICE: 4
+FOREVER KEY: 1
+MISSGUIDED: 2
+COLOR SCHOOL: 1
+Snidel Beauty: 4
+SUPERSHADES: 1
+SO GLAM: 4
+ZEESEA: 1
+Dear.A: 2
+HACCI: 1
+MAC: 1
+SUQQU: 1
+12 GRABS: 1
+RMK: 4
+4U2: 3
+UNICAT: 1
+ETVOS: 3
+JAPANORGANIC: 2
+UNMIX: 1
+Borica: 1
+RICE FORCE: 1
+ettusais: 2
+TSUVIMI: 2
+NIVEA: 1
+G9SKIN: 1
+CARE:NEL: 1
+Secret Key: 1
+YADAH: 1
+WHOMEE: 5
+kakashow: 2
+uka: 1
+Fresh: 1
+HEIM: 1
+BIDOL: 6
+HEXZE: 3
+Clarins: 1
+REIKO KAZKI: 1
+IPSA: 1
+Melvita: 1
+Make Up For Ever: 5
+COLOUR ZONE: 10
+Savex: 12
+Sofina: 3
+Bellflower: 1
+Chulabi: 1
+ORIGINAL ARTIST: 2
+Celvoke: 4
+Anna Sui: 5
+Takami: 1
+&be: 1
+ACRO: 1
+Laura Mercier: 8
+BareMinerals: 2
+RIMMEL LONDON: 18
+Maybelline: 4
+Clinique: 7
+Shu Uemura: 1
+L'Occitane: 1
+OMD: 1
+ReZARD beauty: 1
+BRILLIAGE: 1
+Mitsubi Cosmetics: 1
+OSAJI: 1
+Orbis: 1
+BARTH: 1
+House of Rose: 2
+DAISO: 1
+NATURAL BEAUTY: 1
+Cosme de Beaute: 1
+Ready to Shine: 7
+Nippon Olive: 1
+revanche: 2
+AYURA: 1

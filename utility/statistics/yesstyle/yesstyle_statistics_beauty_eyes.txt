@@ -1,0 +1,224 @@
+Total number of products: 1080
+Total unique brands: 220
+
+Number of products per brand:
+ISEHAN: 12
+FLORTTE: 17
+UNLEASHIA: 4
+IRENEDA: 3
+Judydoll: 23
+Mogugu: 55
+HANDAIYAN: 4
+espoir: 5
+FOCALLURE: 9
+ETUDE: 18
+peripera: 4
+The Saem: 13
+dasique: 7
+CLIO: 9
+Lashie: 60
+3CE: 10
+romand: 5
+Gege Bear: 6
+COLORROSE: 3
+Art Value: 1
+TONYMOLY: 4
+ROZO: 4
+PINKFLASH: 11
+lilybyred: 9
+KARADIUM: 1
+too cool for school: 6
+Shiseido: 22
+RiRe: 3
+Nreain: 11
+Milk Touch: 5
+xixi: 14
+biya: 12
+Pudaier: 5
+GOGO TALES: 21
+BEAUTY GLAZED: 2
+Peach C: 2
+MilleFee: 9
+SKINFOOD: 2
+Kaleidos: 6
+colorgram: 5
+NOVO: 9
+Koji: 11
+VEECCI: 9
+JOOCYEE: 5
+WAKEMAKE: 5
+MACQUEEN: 5
+MANSLY: 1
+HOLIKA HOLIKA: 15
+GIRLCULT: 2
+LuxeFlutter: 3
+fillimilli: 3
+ettusais: 4
+Flower Knows: 6
+Canmake: 14
+NEOGEN: 1
+CHEERFLOR: 1
+MISSHA: 7
+Bbi@: 6
+Aimo: 17
+IMAGIC: 8
+Fujiko: 1
+ENTROPY: 2
+Lactacia: 7
+Miche Bloomin’: 7
+ABOUT_TONE: 1
+Cappuvini: 1
+Nafinya: 36
+ZEESEA: 7
+BCL: 5
+Puremantis: 1
+K-Palette: 2
+masscaku: 9
+mude: 2
+Desireaore: 19
+innisfree: 4
+CEZANNE: 12
+club cosmetics: 4
+dejavu: 4
+BANILA CO: 3
+CORINGCO: 2
+Dear.A: 2
+PASSIONAL LOVER: 2
+HERA: 2
+PiARA: 2
+febble: 1
+lishu: 2
+RoyueS: 1
+JULIA POP: 1
+MSH: 4
+COLORKEY: 1
+BLACK ROUGE: 6
+Sigma Beauty: 1
+NATURE REPUBLIC: 4
+HERORANGE: 4
+Sakura Cloud: 1
+DEZONE: 1
+Kose: 37
+YOUSHA: 2
+Kanebo: 24
+OPERA: 1
+Choyu: 16
+Candy Drop: 1
+O.TWO.O: 3
+OUT-OF-OFFICE: 2
+SPENNY: 2
+ARTMISS: 1
+MEKO: 7
+MISTINE: 2
+COSNORI: 1
+Buttermilk: 1
+O HUI: 5
+Popcorn: 1
+Bonnie Wisp: 14
+RUORI LIANA: 1
+NARS: 1
+Flynn: 1
+I'M MEME: 3
+EXCEL: 6
+2aN: 1
+School Time: 1
+MYY: 1
+CATKIN: 6
+GELLA'S: 5
+everbab: 1
+THE FACE SHOP: 3
+Coolkiss: 2
+denivyse: 9
+VDIVOV: 6
+HOLD LIVE: 1
+AVANCE: 3
+KLAVUU: 1
+Urban Decay: 1
+Sisseria: 5
+Gracebabi: 6
+&be: 2
+3650 san roku go zero: 2
+ADDICTION: 2
+TSUVIMI: 1
+Aperire: 1
+IM'UNNY: 1
+JILL LEEN: 6
+Hepius: 3
+D-up: 6
+Sofea: 1
+INSITI: 1
+CZEL: 1
+Uhue: 1
+MAKEheal: 3
+CODE GLOKOLOR: 5
+AMUSE: 1
+Keep in Touch: 1
+CHIFURE: 1
+Farm Stay: 1
+su:m37: 2
+N.A.F: 2
+YU HAN: 4
+glitterfesta: 6
+Jesireca: 2
+WODWOD: 4
+Anna Sui: 2
+cheeryep: 2
+auou: 1
+DANCING UP: 2
+PINKPUNK: 1
+SANA: 3
+LUMIURGLAS: 1
+MARIE DALGAR: 1
+LEEMEMBER: 1
+SHEDELLA: 4
+COGIT: 1
+WellDerma: 1
+SIDIT: 10
+naturaglace: 1
+Sosu: 1
+Ibiza: 1
+Celvoke: 3
+Shu Uemura: 3
+Stapi: 1
+Maybelline: 2
+DAISO: 2
+Kochanie: 1
+Orbis: 3
+ukiss: 2
+Givenchy: 1
+PureSnow: 2
+AMORTALS: 2
+Christian Dior: 1
+Revlon: 2
+SUQQU: 1
+MENOW: 3
+Tom Ford: 1
+Jelly Bubble: 1
+Cle de Peau Beaute: 1
+CHIOTURE: 3
+ROMANTIC BEAUTY: 2
+SUPERSHADES: 1
+THYRA: 3
+Snidel Beauty: 1
+AKF: 1
+SO GLAM: 1
+PUCO: 1
+MUJI: 1
+ORIGINAL ARTIST: 1
+Mejikaliner: 1
+WHOMEE: 6
+FreshO2: 3
+Estee Lauder: 1
+AME: 1
+Snoshio: 7
+heme: 1
+Violeta: 2
+Berrisom: 1
+BRILLIAGE: 1
+Kao: 1
+LB: 1
+Kaja: 1
+Chacott: 3
+E.L.G: 4
+IPSA: 3
+ETVOS: 1
