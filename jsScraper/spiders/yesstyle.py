@@ -5,7 +5,7 @@ class YesStyleSpider(scrapy.Spider):
     name = "yesstyle"
 
     start_urls = [
-        "https://www.yesstyle.com/en/beauty-eyes/list.html/bcc.15488_bpt.46"
+        "https://www.yesstyle.com/en/beauty-lips/list.html/bcc.15495_bpt.46"
     ]
 
     custom_settings = {
