@@ -1,5 +1,7 @@
 import scrapy
 from playwright_stealth import stealth_sync
+from jsScraper.items import ProductItem  # Adjust "myproject" to the name of your Scrapy project
+import asyncio
 
 class YesStyleSpider(scrapy.Spider):
     name = "yesstyle"
@@ -39,47 +41,64 @@ class YesStyleSpider(scrapy.Spider):
         page = response.meta["playwright_page"]
         stealth_sync(page)  # Apply stealth mode
 
-        # Create the output file and start writing
-        file_path = "yesstyle_products.txt"
-        with open(file_path, "w", encoding="utf-8") as f:
-            f.write("YesStyle Products:\n\n")
+        # Add an event listener to log all network requests made by the page
+        page.on("response", lambda response: self.logger.info(f"Network request: {response.url} - Status: {response.status}"))
 
         current_page = 1
-        max_scrolls = 30  # Adjust if you want more or fewer pages
+        max_scrolls = 2  # Adjust if you want more or fewer pages
 
         for _ in range(max_scrolls):
             self.log(f"Scraping page {current_page}")
             
-            # Scroll to the bottom to trigger loading more products
-            await page.evaluate("window.scrollBy(0, document.body.scrollHeight)")
-            await page.wait_for_timeout(5000)  # Adjust delay if needed
+            # Start listening for the response first
+            async with page.expect_response(lambda r: "rest/products/v1/department" in r.url, timeout=10000) as resp_info:
+                # Scroll to the bottom to trigger loading more products
+                await page.evaluate("window.scrollBy(0, document.body.scrollHeight)")
+                await page.wait_for_timeout(5000)  # Adjust delay if needed
 
-            # Capture any new API response triggered by the scroll
-            async with page.expect_response(lambda r: "rest/products/v1/department" in r.url) as resp_info:
+                # Capture the response after scrolling
                 response_api = await resp_info.value
                 response_json = await response_api.json()
 
-                # Write the extracted data from JSON to the file
-                self.parse_products(response_json, current_page, file_path)
+                # Process the response
+                async for item in self.parse_products(response_json, current_page):
+                    yield item
 
             current_page += 1
 
         await page.close()
 
-    def parse_products(self, response_json, current_page, file_path):
-        """Extracts product data from the JSON API response and appends it to a file"""
+    async def parse_products(self, response_json, current_page):
+        """Extracts product data from the JSON API response and yields ProductItem instances asynchronously."""
+        # Extract the list of products from the response JSON
         products = response_json.get("products", [])
 
         if not products:
             self.log(f"No products found on page {current_page}")
             return
 
-        with open(file_path, "a", encoding="utf-8") as f:
-            f.write(f"\n\nPAGE {current_page}\n\n")
-            for product in products:
-                # Write all key-value pairs for each product
-                for key, value in product.items():
-                    f.write(f"{key}: {value}\n")
-                f.write("\n")  # Separate each product with a newline
+        for entry in products:
+            # Access the nested "product" dictionary inside each entry
+            product = entry.get("product", {})
 
-        self.log(f"Page {current_page} products appended to {file_path}")
+            # Create a new ProductItem and map fields correctly based on the JSON structure
+            item = ProductItem()
+            item['product_id'] = product.get("productId")  # Access "productId" inside the nested "product" dictionary
+            item['name'] = product.get("name")
+            item['images'] = product.get("images", {}).get("m")  # Fetches the medium image URL if available
+            item['brand_name'] = product.get("brandName")
+            item['brand_id'] = product.get("brandId")
+            item['sell_price'] = product.get("sellPrice")
+            item['list_price'] = product.get("listPrice")
+            item['discount'] = product.get("discount")
+            item['discount_value'] = product.get("discountValue")
+            item['color_css'] = product.get("colorCss")
+            item['account_id'] = product.get("accountId")
+            item['attribute_ids'] = product.get("attributeIds")
+            item['show_yesties_badge_icon'] = product.get("showYestiesBadgeIcon")
+            item['url'] = entry.get("url")
+
+            # Use async yield to make this function an async generator
+            yield item
+
+

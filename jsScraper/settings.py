@@ -91,3 +91,10 @@ ITEM_PIPELINES = {
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
+
+# PostgreSQL Database Configuration
+POSTGRES_HOST = 'postgresql://scraper_e6jv_user:KYecsGcmpFath3iCkpolng4y8XGvZ3rE@dpg-csiveslsvqrc73ekljr0-a.oregon-postgres.render.com/scraper_e6jv'
+POSTGRES_PORT = 5432  # Typically the default for PostgreSQL
+POSTGRES_DB = 'scraper_e6jv'
+POSTGRES_USER = 'scraper_e6jv_user'
+POSTGRES_PASSWORD = 'KYecsGcmpFath3iCkpolng4y8XGvZ3rE'
