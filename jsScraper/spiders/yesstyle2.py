@@ -1,59 +1,76 @@
 import scrapy
+import psycopg2
 
 class Yesstyle2Spider(scrapy.Spider):
     name = "yesstyle2"
 
     custom_settings = {
-        'DOWNLOAD_DELAY': 10,  # Delay of 1 second between requests
-        'CONCURRENT_REQUESTS_PER_DOMAIN': 1,  # Max 5 requests per domain at once
-        'AUTOTHROTTLE_ENABLED': True,  # Enable AutoThrottle to dynamically adjust delays
-        'AUTOTHROTTLE_START_DELAY': 1,  # The initial delay before making requests
-        'AUTOTHROTTLE_MAX_DELAY': 5,  # The maximum delay to throttle
-        'AUTOTHROTTLE_TARGET_CONCURRENCY': 1.0,  # Average number of requests Scrapy should be sending
-        'AUTOTHROTTLE_DEBUG': False,  # Disable showing throttling stats
-        'USER_AGENT': 'Mozilla/5.0',  # Fallback User-Agent
+        'DOWNLOAD_DELAY': 8,
+        'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+        'AUTOTHROTTLE_ENABLED': True,
+        'AUTOTHROTTLE_START_DELAY': 1,
+        'AUTOTHROTTLE_MAX_DELAY': 5,
+        'AUTOTHROTTLE_TARGET_CONCURRENCY': 1.0,
+        'USER_AGENT': 'Mozilla/5.0',
         'DOWNLOADER_MIDDLEWARES': {
             'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
             'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
         }
     }
 
-    def read_urls_from_file(self, file_path):
-        with open(file_path, "r") as file:
-           urls = [line.strip() for line in file if line.strip()]
-        return urls 
+    def __init__(self, *args, **kwargs):
+        super(Yesstyle2Spider, self).__init__(*args, **kwargs)
+        # Database connection
+        self.connection = psycopg2.connect(
+            host="dpg-csiveslsvqrc73ekljr0-a.oregon-postgres.render.com",
+            database="scraper_e6jv",
+            user="scraper_e6jv_user",
+            password="KYecsGcmpFath3iCkpolng4y8XGvZ3rE",
+            port="5432"
+        )
+        self.cursor = self.connection.cursor()
 
     def start_requests(self):
-        file_path = "extracted_products.txt"
-        urls = self.read_urls_from_file(file_path)
+        # Fetch all product URLs from the database
+        table_name = "products"
+        self.cursor.execute(f"SELECT url FROM {table_name} WHERE ingredients IS NULL OR ingredients = ''")
+        urls = self.cursor.fetchall()
 
-        for url in urls:
-            yield scrapy.Request(
-                url=url,
-                callback=self.parse_product_page
-            )
+        # Yield a request for each URL
+        for url_tuple in urls:
+            url = url_tuple[0]
+            yield scrapy.Request(url=url, callback=self.parse_product_page, errback=self.handle_error)
 
     def parse_product_page(self, response):
-        # Create a dictionary to store the product details
-        product_info = {}
-
-        # Example: Extract the product name (optional, adjust selector as per site structure)
-        product_name = response.css('.product-name-class::text').get()  # Replace with the actual class if needed
-        if product_name:
-            product_info['product_name'] = product_name.strip()
-
-        # Extract Major Ingredients
+        # Extract major ingredients
         major_ingredients = response.css('.productDetailPage_accordionContent__tZh8X span::text').getall()
         if major_ingredients:
-            product_info['major_ingredients'] = ', '.join([ingredient.strip() for ingredient in major_ingredients])
+            ingredients = ', '.join([ingredient.strip() for ingredient in major_ingredients])
+        else:
+            ingredients = None  # Leave as NULL if not found
 
-        # Log the extracted information
-        self.log(f"Extracted product info: {product_info}")
+        # Update the database with the ingredients
+        table_name = "products"
+        self.cursor.execute(
+            f"UPDATE {table_name} SET ingredients = %s WHERE url = %s",
+            (ingredients, response.url)
+        )
+        self.connection.commit()
 
-        # Optionally write the extracted info to a file
-        file_path = "yesstyle_product_details.txt"
-        with open(file_path, "a", encoding="utf-8") as f:
-            f.write(f"Product URL: {response.url}\n")
-            f.write(f"Product Name: {product_info.get('product_name', 'N/A')}\n")
-            f.write(f"Major Ingredients: {product_info.get('major_ingredients', 'N/A')}\n")
-            f.write("\n" + "=" * 50 + "\n")  # Separator between products
+        self.log(f"Updated ingredients for {response.url}")
+
+    def handle_error(self, failure):
+        # Log the error without updating the `ingredients` field to any value
+        self.logger.error(f"Failed to fetch ingredients for URL: {failure.request.url}")
+        
+        table_name = "products"
+        self.cursor.execute(
+            f"UPDATE {table_name} SET ingredients = NULL WHERE url = %s",
+            (failure.request.url,)
+        )
+        self.connection.commit()
+
+    def close(self, reason):
+        # Close the database connection when spider closes
+        self.cursor.close()
+        self.connection.close()

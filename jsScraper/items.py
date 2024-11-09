@@ -30,3 +30,5 @@ class ProductItem(scrapy.Item):
     attribute_ids = scrapy.Field()
     show_yesties_badge_icon = scrapy.Field()
     url = scrapy.Field()
+    ingredients = scrapy.Field()
+    category = scrapy.Field()

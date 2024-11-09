@@ -1,0 +1,8 @@
+.text-white {
+    color: #fff;
+  }
+  
+  .hover\:text-gray-300:hover {
+    color: #d1d5db; /* Light grey on hover */
+  }
+  

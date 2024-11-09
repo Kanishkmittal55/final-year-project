@@ -1,27 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 import DocumentationPage from './pages/DocumentationPage';
+import YesStyleDataPage from './pages/YesstyleData';
+import YesStyleSitemap from './pages/YesstyleSitemap'; // Import the Sitemap component
+import Navbar from './components/NavbarMain'; // Import Navbar component
 
 function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/documentation">Documentation</Link>
-            </li>
-          </ul>
-        </nav>
-
+        <Navbar /> {/* Use Navbar component */}
+        
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/documentation" element={<DocumentationPage />} />
+          <Route path="/yesstyle/:category" element={<YesStyleDataPage />} />
+          <Route path="/yesstyle/sitemap" element={<YesStyleSitemap />} /> {/* New route for Sitemap */}
         </Routes>
       </div>
     </Router>

@@ -28,15 +28,15 @@ class JsscraperPipeline:
             raise DropItem(f"Missing product_id or name in {item}")
         
         # Map spider name to table name directly
-        table_name = "yesstyle_beauty_cheeks"  # e.g., yesstyle_items
+        table_name = "products"  # e.g., yesstyle_items
         
         # Define SQL query with predefined columns (assuming exact field-to-column matching)
         query = f"""
             INSERT INTO {table_name} (
                 product_id, name, image_url, brand_name, brand_id, sell_price, list_price,
-                discount, discount_value, color_css, url
+                discount, discount_value, color_css, url, ingredients, category
             ) VALUES (
-                %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
+                %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
             );
         """
         
@@ -52,7 +52,10 @@ class JsscraperPipeline:
             adapter.get("discount"),
             adapter.get("discount_value"),
             adapter.get("color_css"),
-            adapter.get("url")
+            adapter.get("url"),
+            adapter.get("ingredients"),
+            adapter.get("category")
+
         )
         
         # Execute the insert query
